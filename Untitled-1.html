@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!--this string is known as DECLARATION it ensures the browser tries to meet industry wide specifications-->
+<HTML lang="en"> <!--TO SPECIFY THE LANGUAGE OF THE PAGE IS ENGLISH-->
+<head>
+    <meta charset="utf-8"><!--META ELEMENT self closing, utf value tells the browser how to encode characters for the page-->
+    <title>CatPhotoApp</title><!--what browsers show in the title bar or tab for the page-->
+</head>
+    <body> <!--everything inside the BODY element shows up on page-->
+<main><!--to identify main content section of the page-->
+<h1>CatPhotoApp</h1>
+  <!--heading elements h1 through h6 signfy IMPORTANCE OF CONTENT: h1 most important-->
+  <!--p element creates paragraphs-->
+  <!--link text between opening and closing tags of anchor (a)-->
+<section>
+  <h2>Cat Photos</h2>
+  <!--TODO:add link to cat photos--><!--Comments in green don't show up on output-->
+  <p>See more <a href="https://freecatphotoapp.com" target='_blank'>cat photos</a> in our gallery</p>
+  <a href="https://freecatphotoapp.com"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cat lying on its back"></a>
+</section>
+<section>
+    <h2>Cat Lists</h2>
+    <h3>Things cats love:</h3>
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+    <figure>
+      <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate.">
+      <figcaption>Cats <em>love</em> lasagna.</figcaption>
+    </figure>
+    <h3>Top 3 things cats hate:</h3>
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+    <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field">
+        <figcaption>Cats <strong>hate</strong> other cats</figcaption>
+    </figure>
+</section>
+<section>
+    <h2>Cat Form</h2>
+    <form action="https://freecatphotoapp.com/submit-cat-photo"><!--CREATING A FORM--><!--form will be submitted to place specified in ACTION-->
+        <input type="text" name="catphoturl" placeholder="cat photo URL" required>
+        <fieldset> <!--ATTRIBUTE CHECKED without value to make radio button or checkbox selected by default-->
+          <legend>Is your cat and indoor or outdoor cat?</legend> <!--CAPTION FOR FIELDSET ELEMENT-->
+          <label><input checked type="radio" id="indoor" name="indoor-outdoor" value="indoor"> Indoor</label> <!--RADIO BUTTON: you click to select answer "indoor"; label so you can click on "indoor"-->
+          <label><input type="radio" id="outdoor" name="indoor-outdoor" value="outdoor"> Outdoor</label> <!--NAME ATTRIBUTE so selecting one button deselects the other-->
+        <!--VALUE ATTRIBUTE so it shows up on form data when form is submitted and you know which radio button was selected-->
+        </fieldset><!--FIELDSET ELEMENT groups related inputs together in a block in the same line-->
+        <fieldset>
+            <legend>What is your cat's personality?</legend>
+        <input value="loving" type="checkbox" id="loving" name="personality"> <label for="loving">Loving</label><!--LABEL with FOR ATTRIBUTE same value as ID so you can click on "loving"-->
+        <!--CHECKBOX so you can select more than one answer--><!--NAME ATTRIBUTE makes it easier for server to process webform-->
+        <input value="lazy" type="checkbox" id="lazy" name="personality>"><label for="lazy">Lazy</label>
+        <input value="energetic" type="checkbox" id="energetic" name="personality"><label for="energetic">Energetic</label>
+        </fieldset>
+        <button type="submit">Submit</button> <!--HOW TO MAKE SUBMIT BUTTON-->
+        <!--HOW TO GET INPUT IN TEXT FORM--><!--add REQUIRED so form can't be submitted without certain information-->
+    </form>
+</section>
+</main>
+<footer>
+    <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+</footer>
+  <!--putting h1, h2, comment and p inside the main element is called NESTING-->
+  <!--img element adds image, img element has SELF CLOSING TAG-->
+  <!--ATTRIBUTES words inside opening tag to control element's behaviour-->
+  <!--src attribute specifies image's URL (image's location)-->
+  <!--alt attribute is displayed if image fails to load-->
+  <!--TARGET attribute with the value _blank to open link in a new tab-->
+  <!--anchor (a) element to link to another page-->
+  <!--FIGURE ELEMENT to associate image with a caption--><!---FIGCAPTION element to write caption-->
+  <!--WRAP word in the em element to EMPHASIZE word--><!--STRONG element to indicate important text-->
+  </body>
+</HTML>
